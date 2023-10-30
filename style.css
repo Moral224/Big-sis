@@ -1,0 +1,33 @@
+.load{
+    width: 100%;
+    height: 100vh;
+    padding-top: 200px;
+    position: relative;
+    -webkit-box-reflect: below -20px liner-gradient(transplant, #00000033);
+    background-image: url(image/200w.webp);
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+.load span{
+    color: aliceblue;
+    position: relative;
+    display: inline-block;
+    font-size: 4rem;
+    text-transform: uppercase;
+    animation: load 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+@keyframes load{
+    0%,
+    40%,
+    100%{
+        transform: translateY(0px);
+    }
+
+    20%{
+        transform: translateY(-30px);
+    }
+}
